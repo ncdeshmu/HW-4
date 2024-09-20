@@ -1,0 +1,96 @@
+---
+title: "HW 4"
+format: html
+editor: visual
+---
+
+**Nihar C. Deshmukh - ST 558 - HW 4 Assignment**
+
+Task 1: Conceptual Questions
+
+```{r}
+#1. If your working directory is myfolder/homework/, what relative path would you specify to get the file located at myfolder/MyData.csv? ""~/MyData.csv"
+
+#2. What are the major benefits of using R projects? R projects allow users to write code faster (as well as collaborate with others easily).
+
+#3. What is git and what is github? According to a source, Git is defined as a "free-source version control system", which developers install on the computer, to keep track of changes and modifications to their files. GitHub is described as "cloud-based hosting service" that allows the users to manage their Git Repositories.
+
+#4. What are the two main differences between a tibble and a data.frame? Tibble is a form of a data.frame, but used in the tidyverse().
+```
+
+```{r}
+#Species %>%
+#arrange(filter(select(as_tibble(iris) %>%
+                        #starts_with("Petal"), Species %<% 
+                        #Petal.Length <1.55
+
+```
+
+#Task 2 Reading Delimited Data
+
+```{r}
+#Task 2 Reading Delimited Data
+```
+
+```{r}
+#glassdata <- read.csv("https://www4.stat.ncsu.edu/~online/datasets/glass.data")
+```
+
+```{r}
+# Newly created variables are available immediately
+#glassdata %>%
+  #select(type_of_glass) %>%
+  #c('1' - 'building_windows_float_processed', '2' - 'building_windows_non_float_processed', '3' - 'vehicle_windows_float_processed', '4' - 'vehicle_windows_non_float_processed', '5' - 'containers', '6' - 'tableware', '7' - 'headlamps') %>%
+     #Fe < 0.2 %>%
+       #Glass %in% c("Tableware","Headlamps")
+```
+
+```{r}
+#yeast <- read.csv("https://www4.stat.ncsu.edu/~online/datasets/yeast.data")
+```
+
+```{r}
+#yeast %>%
+   #subset(yeast, select = c(seq_name, nuc)) %>%
+     #meanmcg <- mean(mcg), medianmcg <- median(mcg), meangvh <- mean(gvh), mediangvh <- median(gvh), meanalm <- mean(alm), medianalm <- (median(alm), meanmit <- mean(mit), medianmit <- median(mit), meanerl <- mean(erl), medianerl <- median(erl), meanpox <- mean(pox), medianpox <- median(pox), meanvac <- mean(vac), medianvac <- median(vac)), (across(v1:v2))
+```
+
+#Task 3: Combining Excel and Delimited Data
+
+```{r}
+#Task 3: Combining Excel and Delimited Data
+```
+
+```{r}
+#install.packages("tidyverse")
+#install.packages("readxl")
+#library(xlsx)
+#library(readxl)
+```
+
+```{r}
+#whitewine <- read_excel(path = "white-wine.xlsx", sheet = "white-wine")
+```
+
+```{r}
+#read_excel(path = "white-wine.xlsx", sheet = "variables")
+#whitewine$white <- c("white"")
+```
+
+```{r}
+#redwine <- read.csv('https://www4.stat.ncsu.edu/~online/datasets/red-wine.csv')
+```
+
+```{r}
+#wines <- dplyr::bind_rows(redwine, whitewine) 
+```
+
+```{r}
+#wines %>%
+  #quality > 6.5 %>%
+  #alcohol < 132 %>%
+  #arrange(wines, desc(quality)) %>%
+  #mydat[, c('acid', 'alcohol', 'type', 'quality')) %>%
+    #mean <- mean(alcohol) %>%
+      #stdev <- stdev(alcohol)
+```
